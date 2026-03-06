@@ -1,1 +1,209 @@
-<h1>Hello World Wide Web!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Greg's Banh Mi</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      margin: 0;
+      background-color: #f8f5f0;
+      color: #2d2d2d;
+    }
+
+    .page-wrap {
+      width: 960px;
+      max-width: 90%;
+      margin: 0 auto;
+      padding: 30px 0 50px 0;
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+    }
+
+    #site-title {
+      font-family: "Oswald", sans-serif;
+      font-weight: 600;
+      font-size: 3rem;
+      text-align: center;
+      color: #7a1f1f;
+      margin-bottom: 20px;
+    }
+
+    nav {
+      font-family: "Raleway", sans-serif;
+      margin-bottom: 40px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 14px 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333333;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #7a1f1f;
+      color: white;
+    }
+
+    .hero-heading {
+      font-family: "Oswald", sans-serif;
+      font-weight: 400;
+      font-size: 2rem;
+      line-height: 1.4;
+      text-align: center;
+      color: #4a3b2f;
+      margin: 0 auto 40px auto;
+      max-width: 850px;
+    }
+
+    .sandwich-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .sandwich-card {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 14px;
+      text-align: center;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+
+    .sandwich-card img {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .sandwich-card h2 {
+      font-family: "Oswald", sans-serif;
+      font-size: 1.6rem;
+      color: #7a1f1f;
+      margin-bottom: 12px;
+    }
+
+    .sandwich-card p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    footer {
+      margin-top: 50px;
+      background-color: #7a1f1f;
+      color: white;
+      text-align: center;
+      padding: 25px 20px;
+      border-radius: 12px;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 700px) {
+      .sandwich-grid {
+        grid-template-columns: 1fr;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      #site-title {
+        font-size: 2.4rem;
+      }
+
+      .hero-heading {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-wrap">
+    <header>
+      <h1 id="site-title">Greg’s Banh Mi</h1>
+
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">Menu</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Contact</a></li>
+        </ul>
+      </nav>
+
+      <h1 class="hero-heading">
+        At Greg's Banh Mi, we're serving up the perfect marriage of French and Vietnamese culinary traditions—crispy-on-the-outside, pillowy-on-the-inside baguettes loaded with bold, fresh flavours that'll make your taste buds sing.
+      </h1>
+    </header>
+
+    <main>
+      <div class="sandwich-grid">
+        <div class="sandwich-card">
+          <img src="banhmi.jpg" alt="Classic Pork Banh Mi sandwich">
+          <h2>Classic Pork Banh Mi</h2>
+          <p>Tender marinated pork topped with crisp pickled vegetables, fresh cilantro, and a smear of pâté on a perfectly crusty baguette. A traditional favorite that balances savory, sweet, and tangy flavors in every bite.</p>
+        </div>
+
+        <div class="sandwich-card">
+          <img src="banhmi.jpg" alt="Lemongrass Chicken Banh Mi sandwich">
+          <h2>Lemongrass Chicken Banh Mi</h2>
+          <p>Grilled chicken marinated in fragrant lemongrass and garlic, paired with cucumber, jalapeños, and our house mayo. Light yet satisfying, this sandwich brings bright, aromatic flavors that'll transport you straight to Saigon.</p>
+        </div>
+
+        <div class="sandwich-card">
+          <img src="banhmi.jpg" alt="Tofu Banh Mi sandwich">
+          <h2>Tofu Banh Mi</h2>
+          <p>Crispy pan-fried tofu glazed in sweet soy sauce, layered with daikon, carrots, and fresh herbs for a vegetarian delight. Proof that plant-based can be just as bold and craveable as any meat-filled sandwich.</p>
+        </div>
+
+        <div class="sandwich-card">
+          <img src="banhmi.jpg" alt="Five-Spice Beef Banh Mi sandwich">
+          <h2>Five-Spice Beef Banh Mi</h2>
+          <p>Thinly sliced beef seared with aromatic five-spice blend and served with pickled vegetables and spicy Sriracha mayo. Rich, warming spices meet cool, crunchy toppings for an unforgettable flavor experience.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      Because life's too short for boring sandwiches. Greg's got you covered—one crispy baguette at a time.
+    </footer>
+  </div>
+</body>
+</html>
